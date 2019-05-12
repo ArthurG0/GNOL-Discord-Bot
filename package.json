@@ -1,0 +1,23 @@
+{
+  "name": "gnol_discord_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gnol.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurG0/gnol_discord_bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArthurG0/gnol_discord_bot/issues"
+  },
+  "homepage": "https://github.com/ArthurG0/gnol_discord_bot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.0",
+    "dotenv": "^8.0.0"
+  }
+}
