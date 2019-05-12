@@ -6,11 +6,22 @@ require('./.env');
 //console.log(process.env)
 const TOKEN = process.env.GNOL_BOT_TOKEN;
 let gnol_server;
+
+const helptext = "List of commands:\n- !coinflip - bot will respond with a message \"heads\" of \"tails\", tagging the user\n- !rand and !rand <argument> - bot will respond with a random number from 1 to the indicated argument (10 by default)" +
+"\n- !giverole @<user> <rolename> - if a role exists on a server, bot will grant a user such a role" +
+"\n- !revokeroles @<user> - bot will revoke all server roles of the user specified" +
+"\n- !howmany - bot will respond with the number of messages that exist in a channel since it was last deployed" +
+"\n- !help - bot will respons with the text describing different commands"
+
+
+
 console.log(TOKEN);
 client.login(TOKEN);
 
 client.on('ready', () => {
     console.log("Connected as: " + client.user.tag)
+
+    console.log(helptext)
     //client.user.setActivity("you from outside", {type: "WATCHING"})
 
     //prints name of all servers it's connected to
@@ -151,6 +162,13 @@ function parseCommand(args, message) {
                     targetMember.removeRoles(targetMember.roles);
                     message.channel.send(targetMember.user.toString() + '\'s roles have been revoked')
                 }
+            break;
+
+            case "help":
+                if(args.length == 1){
+                    message.channel.send(helptext)
+                }
+            break;
 
         default:
             return;
