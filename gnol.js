@@ -215,6 +215,8 @@ function parseCommand(args, message) {
             const httpRequest = new XMLHttpRequest();
             var weather_url = "https://api.openweathermap.org/data/2.5/weather"
             var full_url = weather_url + "?q=" + cityArguments + "&appid=" + process.env.OPEN_WEATHER_APIKEY;
+            //this is needed when city is ambiguous, and city is san jose
+            if(cityArguments === "San Jose") full_url = weather_url + "?id=5392171" + "&appid=" + process.env.OPEN_WEATHER_APIKEY;
             console.log(full_url);
             httpRequest.open("GET", full_url, true);
             var weather_response;
