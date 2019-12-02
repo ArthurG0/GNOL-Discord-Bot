@@ -1,4 +1,4 @@
-GNOL-BOT is a Discord Bot created by Arthur Gatin in 2019
+## GNOL-BOT is a Discord Bot created by Arthur Gatin
 
 
 <img alt="Meet Gnol-Bot" src="https://ArthurG0.github.io/gnol_discord_bot/assets/header.png">
