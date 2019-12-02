@@ -39,7 +39,7 @@ module.exports = (client, message, args) => {
 
             var messagetext = message.author.toString() + ", weather report for " + weather_response.name + "," + weather_response.sys.country + ":\n";
             messagetext +=  weather_response.weather[0].description + "\n";
-            messagetext += "Temperature: " + (weather_response.main.temp-273.15) + "°C\n";
+            messagetext += "Temperature: " + (weather_response.main.temp-273.15).toFixed(2) + "°C\n";
             messagetext += "Wind speed: " + weather_response.wind.speed + "m/s\n";
 
             message.channel.send(messagetext)
