@@ -1,7 +1,7 @@
 {
   "name": "gnol_discord_bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "GNOL-BOT is a Discord Bot created by Arthur Gatin in 2019",
   "main": "gnol.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/ArthurG0/gnol_discord_bot#readme",
   "dependencies": {
-    "discord.js": "^11.5.0",
-    "dotenv": "^8.0.0"
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "xmlhttprequest": "^1.8.0"
   }
 }

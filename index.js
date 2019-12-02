@@ -12,12 +12,15 @@ let gnol_server;
 
 const CMD_PREFIX = '!';
 module.exports.prefix = CMD_PREFIX;
-const helptext = "List of commands:\n- !coinflip - bot will respond with a message \"heads\" of \"tails\", tagging the user\n- !rand and !rand <argument> - bot will respond with a random number from 1 to the indicated argument (10 by default)" +
-    "\n- !giverole @<user> <rolename> - if a role exists on a server, bot will grant a user such a role" +
-    "\n- !revokeroles @<user> - bot will revoke all server roles of the user specified" +
-    "\n- !howmany - bot will respond with the number of messages that exist in a channel since it was last deployed" +
-    "\n- !help - bot will respond with the text describing different commands" + 
-    "\n- !weather <City> - bot will respond with the current weather for the specified city, if it can"
+const helptext = "List of commands:" + 
+    "\n- \`!ping\` - bot will respond with the appropriate message to establish communication :)" + 
+    "\n- \`!coinflip\` - bot will respond with a message \"heads\" of \"tails\", tagging the user" +
+    "\n- \`!rand <ceiling=10>\` - bot will randomly choose a number between 1 and ceiling specified" + 
+    "\n- \`!giverole @<user> <rolename>\` - if a role exists in a server, bot will grant a user such a role" +
+    "\n- \`!revokerole @<user> <rolename>\` or \`!revokerole @<user> all\` - bot will revoke the specified role from the user" +
+    "\n- \`!howmany\` or \`!howmany @<user>\` - bot will respond with the number of messages sent in a channel or sent by the user" +
+    "\n- \`!help\` - bot will respond with this help text" + 
+    "\n- \`!weather <city>\` - bot will respond with the current weather for the specified city"
 module.exports.helptext = helptext;
 
 console.log(TOKEN);

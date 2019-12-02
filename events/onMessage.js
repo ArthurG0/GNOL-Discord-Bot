@@ -43,6 +43,10 @@ function parseCommand(client, message, args) {
 
     //console.log("mentioned: " + message.mentions);
     switch (args[0]) {
+        case "ping":
+            require('../commands/ping.js')(client, message, args);
+            break;
+
         case "coinflip":
 
             require('../commands/coinflip.js')(client, message, args);
@@ -62,8 +66,8 @@ function parseCommand(client, message, args) {
             require('../commands/howmany.js')(client, message, args);
             break;
 
-        case "revokeroles":
-            require('../commands/revokerole.js/')(client, message, args);
+        case "revokerole":
+            require('../commands/revokerole.js')(client, message, args);
             break;
 
         case "help":

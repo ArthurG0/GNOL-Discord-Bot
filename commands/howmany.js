@@ -7,7 +7,7 @@ module.exports = (client, message, args) => {
     
     if(args.length == 1){
     console.log(message.channel.messages.size);
-    message.channel.send('Channel contains ' + message.channel.messages.size + ' messages');
+    message.channel.send('Channel contains ' + message.channel.messages.size + ' messages.');
     return;
     }
 
@@ -20,7 +20,7 @@ module.exports = (client, message, args) => {
         var map = require('../index.js').mapNumMessages;
         var memberMessageCount = mapNumMessages.get(targetMember.id);
 
-        message.channel.send(targetMember.toString() + " has sent " + memberMessageCount + " messages in this channel so far");
+        message.channel.send(targetMember.toString() + " has sent " + memberMessageCount + " messages in this channel so far.");
     }
 
 }

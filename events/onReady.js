@@ -8,6 +8,6 @@ module.exports = (client) => {
     var date = new Date(Date.now());
 
     //send a message to #bot-experiments, tagging me (Arthur), and with Time/Date
-    bot_exp.send(me.user.toString() + ' I am online!\nTime is ' + date.getHours() + ':' + date.getMinutes() + ':' + (date.getSeconds() > 9 ? date.getSeconds() : '0' + date.getSeconds()));
+    //bot_exp.send(me.user.toString() + ' I am online!\nTime is ' + date.getHours() + ':' + date.getMinutes() + ':' + (date.getSeconds() > 9 ? date.getSeconds() : '0' + date.getSeconds()));
     return;
 }
