@@ -1,17 +1,17 @@
 ## GNOL-BOT is a Discord Bot created by Arthur Gatin
 
 
-<img alt="Meet Gnol-Bot" src="https://ArthurG0.github.io/gnol_discord_bot/assets/header.png">
+<img alt="Meet Gnol-Bot" src="https://raw.githubusercontent.com/ArthurG0/GNOL-Discord-Bot/master/assets/header.png">
 
 The bot is designed to be used in text channels for various administrative purposes.
 
 A bot that responds to your messages! 
 
-<img alt="ping" src="https://ArthurG0.github.io/gnol_discord_bot/assets/ping.png">
+<img alt="ping" src="https://raw.githubusercontent.com/ArthurG0/GNOL-Discord-Bot/master/assets/ping.png">
 
 But it can do way more than that:
 
-<img alt="help" src="https://ArthurG0.github.io/gnol_discord_bot/assets/helptext.png">
+<img alt="help" src="https://raw.githubusercontent.com/ArthurG0/GNOL-Discord-Bot/master/assets/helptext.png">
 
 Latest updates:
 
@@ -23,9 +23,9 @@ Latest updates:
  
  Using OpenWeatherAPI, Gnol-Bot can now retrieve and present weather data for cities around the world!
  
- <img alt="cupertino" src="https://ArthurG0.github.io/gnol_discord_bot/assets/weather_cupertino.png">
+ <img alt="cupertino" src="https://raw.githubusercontent.com/ArthurG0/GNOL-Discord-Bot/master/assets/weather_cupertino.png">
  
- <img alt="msc" src="https://ArthurG0.github.io/gnol_discord_bot/assets/weather_moscow.png">
+ <img alt="msc" src="https://raw.githubusercontent.com/ArthurG0/GNOL-Discord-Bot/master/assets/weather_moscow.png">
  
  ### List of commands:
 - `!ping` - bot will respond with the appropriate message to establish communication :)
